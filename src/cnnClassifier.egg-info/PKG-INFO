@@ -1,10 +1,31 @@
 Metadata-Version: 2.1
 Name: cnnClassifier
-Version: -version-
+Version: 0.0.0
 Summary: A small python package for CNN app
-Home-page: https://github.com/Goodnight77/Kidney-Disease-Classification-MLflow-DVC
+Home-page: https://github.com/Goodnight77/Goodnight77-Kidney-Disease-Classification-MLflow-DVC
 Author: Goodnight77
 Author-email: mohammedarbi.nsibi@gmail.com
-Project-URL: Bug Tracker, https://github.com/Goodnight77/Kidney-Disease-Classification-MLflow-DVC/issues
+Project-URL: Bug Tracker, https://github.com/Goodnight77/Goodnight77-Kidney-Disease-Classification-MLflow-DVC/issues
 
-# Goodnight77-Kidney-Disease-Classification-MLflow-DVC
+# Kidney-Disease-Classification-MLflow-DVC
+
+
+# How to run?
+...
+### steps:
+1. Clone the repo
+
+```bash
+https://github.com/Goodnight77/Goodnight77-Kidney-Disease-Classification-MLflow-DVC
+```
+...
+### step 01- create a conda environment after openning the repo
+
+```bash
+conda create -n cnncls python=3.8 -y
+```
+
+```bash
+conda activate cnncls
+```
+
