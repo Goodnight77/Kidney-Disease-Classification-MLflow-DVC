@@ -1,2 +1,63 @@
 [2024-01-31 19:49:32,356: INFO: main: welcome to our custom log]
 [2024-02-01 13:29:50,634: INFO: main: welcome to our custom log]
+[2024-02-06 20:27:00,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-06 20:27:00,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 17:32:12,921: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-02-12 17:32:12,929: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 17:32:12,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 17:32:12,945: ERROR: main: "'ConfigBox' object has no attribute 'artificats_root'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artificats_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artificats_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artificats_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artificats_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artificats_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artificats_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artificats_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "C:\Users\MSI\Desktop\PROJECTS\kidney_mlops\Goodnight77-Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "C:\Users\MSI\Desktop\PROJECTS\kidney_mlops\Goodnight77-Kidney-Disease-Classification-MLflow-DVC\src\cnnClassifier\config\configuration.py", line 12, in __init__
+    create_directories([self.config.artificats_root])
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artificats_root'"
